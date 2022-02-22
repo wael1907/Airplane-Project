@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="For Sign Up To Enter The Site ">
+    <title>Login !</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!---->
+    <style>
+        body{background-image:url("images/siggnback.jpg");background-size: cover;font-family: sans-serif;}
+        .form
+        {
+            border-radius:10px ;
+            background-image: url("images/signbacck.jpg");
+            background-size: cover;
+            position: relative;
+            width: 1200px;
+            box-sizing: border-box;
+            height: 650px;
+            margin: 30px auto;
+            box-shadow: 0 15px 28px -8px black;
+        }
+        .form input[type="text"],[type="password"]
+        {
+            display: inline-block;
+            outline: none;
+            padding: 15px;
+            position: relative;
+            top: 170px;
+            margin: 15px 67px;
+            height: 12px;
+            width: 237px;
+            border: 2px solid rgb(63, 63, 63);
+            background: none;
+            color: white;
+            font-size: 20px;
+            transition: all .4s ease-in-out;  
+            left: 10px;
+         }
+        .form input[type="text"]:focus
+        {
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: 0px 0px 70px 0px rgb(18, 91, 175) inset;
+            transform: scale(1.1 ,1.1);
+        }
+        .form input[type="password"]:focus
+        {
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: 0px 0px 70px 0px rgb(18, 91, 175) inset;
+            transform: scale(1.1 ,1.1);
+        }
+        .form input::placeholder{font-size: 18px;}
+        label
+        {
+            position: absolute;
+            bottom: 301px;
+            left: 90px;
+        }
+        .form input[type="checkbox"]
+        {
+            position: absolute;
+            bottom: 305px;
+            left: 69px;
+        }
+        .form button
+        {
+            width: 134px;
+            height: 40px;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            position: absolute;
+            bottom: 210px;
+            left: 140px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+        .language button{cursor: pointer;color: white;background: none;border: 1px solid rgb(255, 255, 255);font-size: 15px;}
+        .form button:hover{background-color: rgb(18, 91, 175);}
+        #for
+        {
+            color: rgb(161, 161, 161);
+            text-decoration: none;
+            position: absolute;
+            bottom: 310px;
+            left: 250px;
+            font-size: 14px;
+        }
+        i{color: rgb(145, 145, 145);display: inline-block;}
+        #user
+        {  
+            position: absolute;
+            top: 194px;
+            left: 34px;
+            font-size: 25px;
+        }
+        #lock
+        {
+            position: absolute;
+            top: 272px;
+            left: 34px;
+            font-size: 25px;
+        }
+        </style>
+</head>
+<body>
+    <div class="form">
+        <form action="#">
+            <i id="user" class="fas fa-user"></i>
+            <input type="text" placeholder="Username"><br>
+            <i id="lock" class="fas fa-lock"></i>
+            <input type="password" placeholder="Password"><br>
+              <input type="checkbox">
+            <label style="color: white;">Remember Me</label>
+        </form>
+        <a id="for" href="#">Forget your password ?</a>
+        <a href="index.html"><button>Login</button></a>
+    </div>
+</body>
+</html>

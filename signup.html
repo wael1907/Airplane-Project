@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="For Sign Up To Enter The Site ">
+    <title>Sign Up !</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!---->
+    <style>
+        body{background-image:url("images/siggnback.jpg");background-size: cover;font-family: sans-serif;}
+        .form
+        {
+            border-radius:10px ;
+            background-image: url("images/signbacck.jpg");
+            background-size: cover;
+            position: relative;
+            width: 1200px;
+            box-sizing: border-box;
+            height: 650px;
+            margin: 30px auto;
+            box-shadow: 0 15px 28px -8px black;
+        }
+        .form #pp
+        {
+            color: white;
+            font: 1.1em ;
+            padding: 66px;
+            top: -20px;
+            position: absolute;
+            display: inline-inline-block;
+            letter-spacing: 1px;
+        }
+        .form #pp a
+        {
+            color: rgb(37, 123, 221);
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .form input 
+        {
+            display: inline-block;
+            outline: none;
+            padding: 15px;
+            position: relative;
+            top: 100px;
+            margin: 15px 67px;
+            height: 12px;
+            width: 237px;
+            border: 2px solid rgb(63, 63, 63);
+            background: none;
+            color: white;
+            font-size: 20px;
+            transition: all .4s ease-in-out;  
+         }
+        .form input:focus
+        {
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: 0px 0px 70px 0px rgb(18, 91, 175) inset;
+            transform: scale(1.1 ,1.1);
+        }
+        .form input::placeholder{font-size: 18px;}
+        .form button
+        {
+            width: 134px;
+            height: 40px;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            position: absolute;
+            bottom: 180px;
+            left: 140px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+        .form button:hover{background-color: rgb(18, 91, 175);}
+        #or
+        {
+            color: #AAA;
+            position: absolute;
+            bottom: 100px;
+            left: 115px;
+        }
+        .language button{cursor: pointer;color: white;background: none;border: 1px solid rgb(255, 255, 255);font-size: 15px;}
+        #or::before{content: "ــــــــــ ";}
+        #or::after{content: " ــــــــــ";}
+        i{color: white;float: left;margin-left: 40px;position: relative;top: 260px;left: 100px;font-size: 20px;transition: all .2s ease-in-out;}
+        #face:hover{color: #3666ec;}
+        #google:hover{color: #b3261c;}
+        #twitter:hover{color: #2aa9e0;}
+    </style>
+        <!---->
+
+</head>
+<body>
+    <div class="form">
+        <p id="pp">Already have an account ?<a href="login.html"> Login</a></p>
+        <form action="#">
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Email or Phone Number" autocomplete="off"><br>
+            <input type="password" placeholder="Password"><br>
+            <input type="password" placeholder="Re Password"><br>
+        </form>
+        <a href="#"><button>Sign Up</button></a>
+        <p id="or">or Sign Up with</p>
+
+        <a  href=""><i id="face" class="fab fa-facebook-f"></i></a>
+        <a href=""><i id="google" class="fab fa-google"></i></a>
+        <a href=""><i id="twitter" class="fab fa-twitter"></i></a>
+    </div>
+</body>
+</html>
